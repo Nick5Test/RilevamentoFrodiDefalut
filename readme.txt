@@ -1,15 +1,28 @@
-Pandas: Il tuo Excel programmabile. Gestisce i dati tabellari.
+AI & Machine Learning Playground 🚀
 
-NumPy: La matematica veloce sotto il cofano.
+Questa repository contiene una serie di progetti pratici sviluppati per esplorare e comprendere i concetti fondamentali dell'Intelligenza Artificiale, passando dal Machine Learning (dati tabellari) al Deep Learning (serie temporali).
 
-Matplotlib / Seaborn: Per creare grafici (visualizzare i dati è fondamentale).
+La repository è divisa attualmente in due progetti principali:
+1. Rilevamento Frodi con Carte di Credito (fraud_detection.ipynb)
 
-Scikit-learn (sklearn): La libreria che contiene gli algoritmi di Machine Learning classici.
+Questo progetto affronta il problema della classificazione binaria su dataset fortemente sbilanciati. L'obiettivo è identificare transazioni fraudolente all'interno di un enorme volume di transazioni lecite, minimizzando i falsi positivi per non bloccare i clienti onesti.
 
-Jupyter: Il motore per far girare i notebook.
+    Concetti chiave: Data Exploration, Train/Test Split, Confusion Matrix, Precision vs Recall, Class Weighting, Calibrazione del Setpoint (Threshold Tuning).
 
-Per questo progetto, uso un dataset classico ma reale: Credit Card Fraud Detection. 
-Contiene transazioni fatte con carte di credito nel 2013 da titolari europei. 
-È perfetto perché è fortemente sbilanciato (pochissime frodi rispetto alle transazioni lecite), come nella realtà.
+    Modello utilizzato: Regressione Logistica (Logistic Regression).
 
-Link: https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud Scarico il creditcard.csv
+    Stack Tecnologico: Python, Scikit-learn, Pandas, NumPy, Matplotlib/Seaborn.
+
+    Dataset: Credit Card Fraud Detection (Kaggle) - Dati reali di transazioni europee del 2013.
+
+2. Predittore di Trend Azionari (stock_predictor.ipynb)
+
+Questo progetto esplora il Deep Learning applicato alla finanza. L'obiettivo è analizzare i dati storici dei mercati finanziari (Time Series) per identificare pattern e prevedere i trend futuri utilizzando una rete neurale.
+
+    Concetti chiave: Serie Temporali (Time Series), Normalizzazione dati, Algoritmo a "Finestra Scorrevole" (Sliding Window / Buffer Circolare) per preparare input sequenziali.
+
+    Modello utilizzato: Rete Neurale Ricorrente con architettura LSTM (Long Short-Term Memory).
+
+    Stack Tecnologico: Python, TensorFlow / Keras, yfinance (per il download dinamico dei dati storici).
+
+    Dataset: Dati di mercato in tempo reale (es. Apple) scaricati tramite le API di Yahoo Finance.
